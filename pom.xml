@@ -8,8 +8,11 @@
 	<groupId>com.hong</groupId>
 	<artifactId>hong-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<relativePath>../hong-microservice/pom.xml</relativePath>
   </parent>
 
   <artifactId>spring-cloud</artifactId><!-- 当前Module我自己叫什么名字 -->
+  <packaging>pom</packaging>
+
 
 </project>
