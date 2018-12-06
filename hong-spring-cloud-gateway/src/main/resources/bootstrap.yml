@@ -1,0 +1,28 @@
+server:
+  port: 9527
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+zuul:
+  #ignored-services: microservice-product
+  ignored-services: "*"
+  prefix: /hong
+  #routes:
+  #  myproduct.serviceId: microservice-product
+  #  myproduct.path: /myproduct/**
+
+spring:
+  application:
+    name: hong-spring-cloud-gateway
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://config-3344.com:3344
+      fail-fast: true

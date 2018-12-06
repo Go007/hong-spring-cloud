@@ -17,5 +17,6 @@
     <modules>
         <module>hong-spring-cloud-eureka</module>
         <module>hong-spring-cloud-config</module>
+        <module>hong-spring-cloud-gateway</module>
     </modules>
 </project>
