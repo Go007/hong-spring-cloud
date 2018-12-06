@@ -1,0 +1,24 @@
+server:
+  port: 3344
+  
+# git config  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Go007/microservice-config.git
+          force-pull: true
+          #search-paths: conf_dev
+          username: Go007
+          password: htimeis007money
+  application:
+    name: hong-spring-cloud-config
+
+# 程序的自描述信息          
+info:
+  application:
+    name: 云配置中心
+    version: 1.0-SNAPSHOT
+    owner: hong.com
+    author: hong
