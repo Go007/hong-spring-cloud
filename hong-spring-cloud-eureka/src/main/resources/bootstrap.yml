@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hong-spring-cloud-eureka
+
+eureka:
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000  
+
+# 程序的自描述信息
+info:
+  application:
+    name: 注册中心
+    version: 1.0-SNAPSHOT
+    owner: hong.com
+    author: hong
